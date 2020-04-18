@@ -1,7 +1,5 @@
 Chapitre 9 : Introduction aux GLM
 ================
-*Traduit par 
-
 *Chapitre traduit par [<span class="underline">Cédric Batailler</span>](https://cedricbatailler.me/). et relu par Nicolas B.
 Verger.*
 
