@@ -28,7 +28,7 @@ Vous apprendrez les fonctions et l’itération en simulant des données afin de
 
 ### **7.1.3 Niveau avancé**
 
-![image alt text](Chapitre 7 Iteration & fonctions/image_0.gif)
+![](./Chapitre%207%20Iteration%20%26%20fonctions/image_0.gif)
 
 Les sujets ci-dessous ne sont pas (encore) détaillés dans ce matériel, mais constituent des directions pour un apprentissage autodidacte.
 
@@ -518,7 +518,7 @@ Vous pouvez utiliser la fonction set.seed avant d'exécuter une fonction qui uti
 
 Assurez-vous de ne jamais utiliser  set.seed() à l'intérieur d'une fonction de simulation, sinon vous simulerez les mêmes données en boucle.
 
-[image alt text](Chapitre 7 Iteration & fonctions/image_1.gif)
+![](./Chapitre%207%20Iteration%20%26%20fonctions/image_1.png)
 
 Figure 7.1: @KellyBodwin
 
