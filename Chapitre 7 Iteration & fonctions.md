@@ -18,7 +18,7 @@ Vous apprendrez les fonctions et l’itération en simulant des données afin de
 
 3. Ecrire votre propre fonction personnalisée ([custom functions](https://psyteachr.github.io/msc-data-skills/func.html#custom-functions)) avec function()
 
-4. Définir des valeurs par défaut ([default values](https://psyteachr.github.io/msc-data-skills/func.html#defaults)) pour les arguments de vos fonctions. 
+4. Définir des valeurs par défaut ([default values](https://psyteachr.github.io/msc-data-skills/func.html#defaults)) pour les arguments de vos fonctions.
 
 ### **7.1.2 Niveau intermédiaire**
 
@@ -28,7 +28,7 @@ Vous apprendrez les fonctions et l’itération en simulant des données afin de
 
 ### **7.1.3 Niveau avancé**
 
-![image alt text](image_0.gif)
+![image alt text](Chapitre 7 Iteration & fonctions/image_0.gif)
 
 Les sujets ci-dessous ne sont pas (encore) détaillés dans ce matériel, mais constituent des directions pour un apprentissage autodidacte.
 
@@ -66,7 +66,7 @@ Dans les deux prochains cours, nous allons en apprendre davantage sur la fonctio
 
 La fonction rep() vous permet de répéter le premier argument plusieurs fois.
 
-Utilisez rep() afin de créer un vecteur alternant 24 valeurs "A" et "B". 
+Utilisez rep() afin de créer un vecteur alternant 24 valeurs "A" et "B".
 
 **rep**(**c**("A", "B"), 12)
 
@@ -82,7 +82,7 @@ Si vous ne spécifiez pas ce qu’est le deuxième argument, il prendra par déf
 
 ## [20] "B" "A" "B" "A" "B"
 
-Si le deuxième argument est un vecteur de la même longueur que le premier argument, chaque élément du premier vecteur est répété autant de fois que spécifié dans le deuxième argument. Utilisez  rep()  pour créer un vecteur de 11 valeurs "A" suivies de 3 valeurs "B" 
+Si le deuxième argument est un vecteur de la même longueur que le premier argument, chaque élément du premier vecteur est répété autant de fois que spécifié dans le deuxième argument. Utilisez  rep()  pour créer un vecteur de 11 valeurs "A" suivies de 3 valeurs "B"
 
 **rep**(**c**("A", "B"), **c**(11, 3))
 
@@ -196,7 +196,7 @@ report_p <- **function**(p, digits = 3) {
 
   }
 
-  
+
 
   reported
 
@@ -218,7 +218,7 @@ report_p <- **function**(p, digits = 3) {
 
   }
 
-  
+
 
   **return**(reported)
 
@@ -260,7 +260,7 @@ x <- 10
 
 ## [1] 5
 
-## 
+##
 
 ## $x
 
@@ -282,7 +282,7 @@ report_p <- **function**(p, digits = 3) {
 
   **if** (p >= 1) **warning**("les valeurs de p sont normalement inférieures à 1")
 
-  
+
 
   **if** (p < .001) {
 
@@ -296,7 +296,7 @@ report_p <- **function**(p, digits = 3) {
 
   }
 
-  
+
 
   reported
 
@@ -352,11 +352,11 @@ Vous pouvez exécuter un test t à deux échantillons indépendant de Welch en i
 
 **t.test**(dat$A, dat$B)
 
-## 
+##
 
 ##  Welch Two Sample t-test
 
-## 
+##
 
 ## data:  dat$A and dat$B
 
@@ -370,7 +370,7 @@ Vous pouvez exécuter un test t à deux échantillons indépendant de Welch en i
 
 ## sample estimates:
 
-## mean of x mean of y 
+## mean of x mean of y
 
 ##  4.965341  5.386096
 
@@ -380,11 +380,11 @@ longdat <- **gather**(dat, group, score, A:B)
 
 **t.test**(score~group, data = longdat)
 
-## 
+##
 
 ##  Welch Two Sample t-test
 
-## 
+##
 
 ## data:  score by group
 
@@ -398,7 +398,7 @@ longdat <- **gather**(dat, group, score, A:B)
 
 ## sample estimates:
 
-## mean in group A mean in group B 
+## mean in group A mean in group B
 
 ##        4.965341        5.386096
 
@@ -470,7 +470,7 @@ t_sim <- **function**() {
 
     broom::**tidy**() %>%
 
-    **pull**(p.value) 
+    **pull**(p.value)
 
 }
 
@@ -518,7 +518,7 @@ Vous pouvez utiliser la fonction set.seed avant d'exécuter une fonction qui uti
 
 Assurez-vous de ne jamais utiliser  set.seed() à l'intérieur d'une fonction de simulation, sinon vous simulerez les mêmes données en boucle.
 
-![image alt text](image_1.png)
+[image alt text](Chapitre 7 Iteration & fonctions/image_1.gif)
 
 Figure 7.1: @KellyBodwin
 
@@ -542,7 +542,7 @@ t_sim <- **function**(n = 10, m1=0, sd1=1, m2=0, sd2=1) {
 
     broom::**tidy**() %>%
 
-    **pull**(p.value) 
+    **pull**(p.value)
 
 }
 
@@ -566,15 +566,15 @@ power
 
 ## [1] 0.268
 
-Comparez le résultat à la puissance statistique calculée à partir de la fonction power.t.test 
+Comparez le résultat à la puissance statistique calculée à partir de la fonction power.t.test
 
 **power.t.test**(n = 100, delta = 0.2, sd = 1, type="two.sample")
 
-## 
+##
 
-##      Two-sample t test power calculation 
+##      Two-sample t test power calculation
 
-## 
+##
 
 ##               n = 100
 
@@ -588,7 +588,7 @@ Comparez le résultat à la puissance statistique calculée à partir de la fonc
 
 ##     alternative = two.sided
 
-## 
+##
 
 ## NOTE: n is number in *each* group
 
@@ -605,4 +605,3 @@ Calculez la puissance statistique via la simulation et power.t.test  pour les te
 ## **7.6 Exercices**
 
 Téléchargez les exercices. Ne regardez les réponses qu'après avoir tenté de répondre à toutes les questions.
-
