@@ -18,6 +18,8 @@
 
 * [Chapitre 6 - Les liaisons de donnée](https://github.com/co-relab/ManuelRstudio-Lisa-De-Bruine/blob/master/Chapitre%206_%20les%20liaisons%20de%20donn%C3%A9e.markdown)
 
+* [Chapitre 7 - Iteration & fonctions](https://github.com/co-relab/ManuelRstudio-Lisa-De-Bruine/blob/master/Chapitre%207%20Iteration%20%26%20fonctions.md)
+
 * [Chapitre 8 - Probabilités et simulations](https://github.com/co-relab/ManuelRstudio-Lisa-De-Bruine/blob/master/Chapitre%208_%20probabilit%C3%A9s%20et%20simulations.markdown)
 
 * [Chapitre 9 - Introduction aux GLM](https://github.com/co-relab/ManuelRstudio-Lisa-De-Bruine/blob/master/chapter-9.md)
